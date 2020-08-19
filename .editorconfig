@@ -3,3 +3,6 @@ root = true
 [*]
 indent_size = tab
 tab_width = 2
+
+[{gradlew, output.txt}]
+end_of_line = lf

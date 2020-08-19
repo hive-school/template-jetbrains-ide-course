@@ -1,4 +1,4 @@
-# Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
+# Creative Commons Attribution-NonCommercial-NoDerivatives 4.0
 
 This is a human-readable summary of (and not a substitute for) the [license](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode)
 
@@ -10,7 +10,7 @@ This is a human-readable summary of (and not a substitute for) the [license](htt
 
 ## You are free to:
 
-- **Share** — copy and redistribute the material in any medium or format
+- Share — copy and redistribute the material in any medium or format
 - The licensor cannot revoke these freedoms as long as you follow the license terms.
 
 ## Under the following terms:

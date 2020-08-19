@@ -12,7 +12,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Lesson Example/Edu Task" />
+            <option value="$PROJECT_DIR$/Lesson Example/Output Task" />
             <option value="$PROJECT_DIR$/Lesson Example/Theory Task" />
+            <option value="$PROJECT_DIR$/Lesson Example/task6" />
             <option value="$PROJECT_DIR$/util" />
           </set>
         </option>
