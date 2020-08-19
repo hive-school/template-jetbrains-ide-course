@@ -1,0 +1,1 @@
+# template-jetbrains-ide-course
