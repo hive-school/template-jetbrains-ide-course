@@ -20,6 +20,16 @@ plugins {
 allprojects {
   apply plugin: "org.jetbrains.gradle.plugin.idea-ext"
   apply plugin: "idea"
+
+  idea {
+    module {
+      downloadSources(false)
+      inheritOutputDirs(true)
+      outputDir buildDir
+      excludeDirs += files(buildDir)
+    }
+  }
+
 }
 
 subprojects {
@@ -79,10 +89,6 @@ configure(subprojects.findAll { it.name != "util" }) {
 
   idea {
     module {
-      downloadSources(true)
-      inheritOutputDirs(true)
-      outputDir file("build")
-      excludeDirs += files(buildDir)
       sourceDirs += files("src")
       testSourceDirs += files("test")
     }
