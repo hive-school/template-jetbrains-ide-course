@@ -1,1 +1,1 @@
-# template-jetbrains-ide-course
+# Jetbrains IDE Course

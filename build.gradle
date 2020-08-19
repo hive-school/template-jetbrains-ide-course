@@ -1,0 +1,95 @@
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+}
+
+def printOutput(def output) {
+  return tasks.create("printOutput") {
+    for (line in output.toString().readLines()) {
+      println "#educational_plugin" + line
+    }
+  }
+}
+
+plugins {
+  id "org.jetbrains.gradle.plugin.idea-ext" version "0.8.1"
+  id "com.github.ben-manes.versions" version "0.29.0"
+}
+
+allprojects {
+  apply plugin: "org.jetbrains.gradle.plugin.idea-ext"
+  apply plugin: "idea"
+}
+
+subprojects {
+  apply plugin: "application"
+  apply plugin: "java"
+  apply plugin: "com.github.ben-manes.versions"
+
+  sourceCompatibility = JavaVersion.VERSION_14
+  targetCompatibility = JavaVersion.VERSION_14
+
+  repositories {
+    mavenCentral()
+  }
+
+  dependencies {
+    testImplementation("org.junit.jupiter:junit-jupiter:5.7.0-RC1")
+    testImplementation("org.assertj:assertj-core:3.16.1")
+  }
+
+  sourceSets {
+    main {
+      java {
+        srcDirs "src"
+      }
+    }
+    test {
+      java {
+        srcDir "test"
+      }
+    }
+  }
+
+  test {
+    useJUnitPlatform()
+    scanForTestClasses(false)
+  }
+
+  mainClassName = project.hasProperty("mainClass") ? project.getProperty("mainClass") : ""
+
+  def runOutput = new ByteArrayOutputStream()
+  tasks.run.setStandardOutput(runOutput)
+  tasks.run.doLast { printOutput(runOutput) }
+
+  dependencyLocking {
+    lockAllConfigurations()
+  }
+
+}
+
+project(":util") {
+  dependencies {
+    implementation("org.junit.jupiter:junit-jupiter:5.7.0-RC1")
+  }
+}
+
+configure(subprojects.findAll { it.name != "util" }) {
+
+  idea {
+    module {
+      downloadSources(true)
+      inheritOutputDirs(true)
+      outputDir file("build")
+      excludeDirs += files(buildDir)
+      sourceDirs += files("src")
+      testSourceDirs += files("test")
+    }
+  }
+
+  dependencies {
+    compile project(":util").sourceSets.main.output
+    testCompile project(":util").sourceSets.test.output
+  }
+}

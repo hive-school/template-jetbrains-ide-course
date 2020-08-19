@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/template-jetbrains-ide-course.iml" filepath="$PROJECT_DIR$/.idea/template-jetbrains-ide-course.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Lesson Example/Theory Task/template-jetbrains-ide-course.Lesson_Example-Theory_Task.iml" filepath="$PROJECT_DIR$/.idea/modules/Lesson Example/Theory Task/template-jetbrains-ide-course.Lesson_Example-Theory_Task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Lesson Example/Theory Task/template-jetbrains-ide-course.Lesson_Example-Theory_Task.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Lesson Example/Theory Task/template-jetbrains-ide-course.Lesson_Example-Theory_Task.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Lesson Example/Theory Task/template-jetbrains-ide-course.Lesson_Example-Theory_Task.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Lesson Example/Theory Task/template-jetbrains-ide-course.Lesson_Example-Theory_Task.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/template-jetbrains-ide-course.util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/template-jetbrains-ide-course.util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/template-jetbrains-ide-course.util.main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/template-jetbrains-ide-course.util.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/template-jetbrains-ide-course.util.test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/template-jetbrains-ide-course.util.test.iml" />
+    </modules>
+  </component>
+</project>

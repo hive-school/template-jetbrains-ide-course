@@ -1,0 +1,12 @@
+title: Course Title
+language: English
+summary: |-
+  Course title
+  Created: Aug 17, 2020
+vendor:
+  name: Vladyslav Volkov
+  email: vlad@hiberbee.com
+  url: https://github.com/vladyslavvolkov
+programming_language: Java
+content:
+- Lesson Example
